@@ -135,8 +135,7 @@ namespace WpfMath.Atoms
 
                     default:
                     {
-                        string helpStr = TexFormulaParser.HelpOutMessage(item, AllowedEncloseNotations);
-                         throw new TexParseException($"Unknown enclose notation: {item}{helpStr} ");
+                         throw new TexParseException($"Unknown enclose notation: {item} ");
                     }
                 }
             }
